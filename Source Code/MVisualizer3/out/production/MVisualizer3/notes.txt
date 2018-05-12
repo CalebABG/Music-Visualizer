@@ -1,0 +1,5 @@
+https://stackoverflow.com/questions/4142313/java-convert-milliseconds-to-time-format
+https://stackoverflow.com/questions/20408388/how-to-filter-fft-data-for-audio-visualisation
+https://math.stackexchange.com/questions/544559/is-there-any-equation-for-triangle
+https://github.com/nok/soundcloud-java-library
+https://github.com/dominikhofacker/audiovisualization
