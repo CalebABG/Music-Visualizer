@@ -11,7 +11,9 @@ If you're just stopping by please check out the application which is in the MVis
 ---
 
 ## Design and Features
-![](Resources/mvisualizer_startscreen.PNG?raw=true "UI Design") ![](Resources/mvisualizer_play-songqueue-soundcloud.PNG?raw=true "UI Design")
+Start Screen             |  Player, SongQueue and SoundCloud Integration
+:-------------------------:|:-------------------------:
+![](Resources/mvisualizer_startscreen.PNG?raw=true "UI Design")  |  ![](Resources/mvisualizer_play-songqueue-soundcloud.PNG?raw=true "UI Design")
 
 ---
 
