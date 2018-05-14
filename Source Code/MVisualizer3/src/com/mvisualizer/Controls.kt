@@ -78,7 +78,10 @@ object Controls {
                 .addListener { p0 -> backgroundStep = p0.value.toInt() }
 
         val musicgain_slider = createSlider(0.02f, g1, "music-gain", 0f, 8 * sl_offset + sl_spacing, slw, slh, -30f, 10f, 0f)
-                .addListener { p0 -> musicGain = p0.value; player.gain = musicGain }
+                .addListener { p0 ->
+                    musicGain = p0.value
+                    if (playerInitialized) player.gain = musicGain
+                }
 
 
         //Button constants

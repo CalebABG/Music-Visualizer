@@ -517,16 +517,18 @@ class Visualizer : PApplet() {
         }
 
         fun togglePlay() {
-            isPaused = if (player.isPlaying) {
-                player.pause()
-                true
-            }
-            else {
-                player.play()
-                false
-            }
+            if (playerInitialized) {
+                isPaused = if (player.isPlaying) {
+                    player.pause()
+                    true
+                }
+                else {
+                    player.play()
+                    false
+                }
 
-            cp5.getController("pause-song").setCaptionLabel(if (isPaused) "play-song" else "pause-song")
+                cp5.getController("pause-song").setCaptionLabel(if (isPaused) "play-song" else "pause-song")
+            }
         }
 
         /**
@@ -534,16 +536,18 @@ class Visualizer : PApplet() {
          * Toggles mute and also updates the gui buttons caption
          */
         fun toggleMute() {
-            isMute = if (player.isMuted) {
-                player.unmute()
-                false
-            }
-            else {
-                player.mute()
-                true
-            }
+            if (playerInitialized) {
+                isMute = if (player.isMuted) {
+                    player.unmute()
+                    false
+                }
+                else {
+                    player.mute()
+                    true
+                }
 
-            cp5.getController("mute-song").setCaptionLabel(if (isMute) "un-mute-song" else "mute-song")
+                cp5.getController("mute-song").setCaptionLabel(if (isMute) "un-mute-song" else "mute-song")
+            }
         }
 
         fun addSongs(songs: ArrayList<MSong>?) {

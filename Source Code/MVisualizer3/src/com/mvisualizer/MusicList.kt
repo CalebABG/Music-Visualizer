@@ -36,27 +36,31 @@ open class MusicList {
 
         fun nextSong() {
             if (!visListModel.isEmpty){
-                val nextSong: MSong = visListModel.poll()
-                Controls.visualizerRef.loadSong(nextSong)
+                if (!jList.valueIsAdjusting) {
+                    val nextSong: MSong = visListModel.poll()
+                    Controls.visualizerRef.loadSong(nextSong)
+                }
             }
         }
 
         fun playSongAt(){
             if (!jList.isSelectionEmpty){
-                val selectedIndex = jList.selectedIndex
-                val selectedSong: MSong = visListModel.remove(selectedIndex)
-//                val selectedItemIndex = visListModel.indexOf(jList.selectedValue)
-                Controls.visualizerRef.loadSong(selectedSong)
+                if (!jList.valueIsAdjusting) {
+                    val selectedIndex = jList.selectedIndex
+                    val selectedSong: MSong = visListModel.remove(selectedIndex)
+                    Controls.visualizerRef.loadSong(selectedSong)
+                }
             }
         }
 
         fun cutSong() {
             if (!jList.isSelectionEmpty) {
-                val selectedIndex = jList.selectedIndex
-//                val selection = jList.selectedValue
-                visListModel.remove(selectedIndex)
+                if (!jList.valueIsAdjusting) {
+                    val selectedIndex = jList.selectedIndex
+                    visListModel.remove(selectedIndex)
 
-                jList.selectedIndex = selectedIndex
+                    jList.selectedIndex = selectedIndex
+                }
             }
         }
 
@@ -138,7 +142,6 @@ open class MusicList {
         val scrollPane_1 = JScrollPane()
         frame.contentPane.add(scrollPane_1, BorderLayout.CENTER)
 
-        jList.isDoubleBuffered = true
         jList.visibleRowCount -1
         jList.layoutOrientation = JList.VERTICAL
         jList.selectionMode = ListSelectionModel.SINGLE_SELECTION

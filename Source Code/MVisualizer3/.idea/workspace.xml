@@ -22,15 +22,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Visualizer.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Visualizer.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mvisualizer/Visualizer.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+            <state relative-caret-position="323">
+              <caret line="537" column="25" selection-start-line="537" selection-start-column="25" selection-end-line="537" selection-end-column="25" />
               <folding>
                 <element signature="n#!!block;n#stop#0;n#!!block;n#Visualizer#0" />
                 <element signature="n#!!block;n#circularPulse#0;n#!!block;n#Visualizer#0" />
-                <element signature="e#3610#4199#0" />
                 <element signature="n#!!block;n#signal#0;n#!!block;n#Visualizer#0" />
                 <element signature="n#!!block;n#inverse#0;n#!!block;n#Visualizer#0" />
                 <element signature="n#!!block;n#functionMusic#0;n#!!block;n#Visualizer#0" />
@@ -39,7 +38,8 @@
                 <element signature="n#!!block;n#showSongTime#0;n#!!block;n#Visualizer#0" />
                 <element signature="n#!!block;n#mouseReleased#0;n#!!block;n#Visualizer#0" />
                 <element signature="n#!!block;n#showBackGround#0;n#!!block;n#Visualizer#0" />
-                <element signature="e#16948#17729#0" />
+                <element signature="n#!!block;n#togglePlay#0;n#!!block;n#Companion#0;n#!!block;n#Visualizer#0" />
+                <element signature="n#!!block;n#toggleMute#0;n#!!block;n#Companion#0;n#!!block;n#Visualizer#0" />
                 <element signature="n#!!block;n#fileFilterStr#0;n#!!block;n#Companion#0;n#!!block;n#Visualizer#0" />
                 <element signature="n#!!block;n#isSongCorrectFormat#0;n#!!block;n#Companion#0;n#!!block;n#Visualizer#0" />
               </folding>
@@ -50,17 +50,17 @@
       <file leaf-file-name="MConstants.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mvisualizer/MConstants.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
+            <state relative-caret-position="648">
               <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MusicList.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MusicList.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/mvisualizer/MusicList.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="118" column="39" selection-start-line="118" selection-start-column="39" selection-end-line="118" selection-end-column="39" />
+            <state relative-caret-position="406">
+              <caret line="48" column="76" lean-forward="true" selection-start-line="48" selection-start-column="76" selection-end-line="48" selection-end-column="76" />
               <folding>
                 <element signature="e#354#434#0" />
               </folding>
@@ -71,8 +71,8 @@
       <file leaf-file-name="Controls.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mvisualizer/Controls.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="136" column="41" lean-forward="true" selection-start-line="136" selection-start-column="41" selection-end-line="136" selection-end-column="41" />
+            <state relative-caret-position="2396">
+              <caret line="115" column="40" selection-start-line="115" selection-start-column="40" selection-end-line="115" selection-end-column="40" />
               <folding>
                 <element signature="e#25#164#0" expanded="true" />
                 <element signature="e#1638#2224#0" />
@@ -171,14 +171,14 @@
         <option value="$PROJECT_DIR$/src/notes" />
         <option value="$PROJECT_DIR$/src/com/mvisualizer/VisListModel.java" />
         <option value="$PROJECT_DIR$/src/com/mvisualizer/URLLoader.kt" />
-        <option value="$PROJECT_DIR$/src/com/mvisualizer/MusicList.kt" />
         <option value="$PROJECT_DIR$/src/com/mvisualizer/InstructionsWindow.kt" />
         <option value="$PROJECT_DIR$/src/MVInstructions.html" />
-        <option value="$PROJECT_DIR$/src/com/mvisualizer/Controls.kt" />
         <option value="$PROJECT_DIR$/src/com/mvisualizer/MSong.kt" />
         <option value="$PROJECT_DIR$/src/com/mvisualizer/ISoundCloud.kt" />
-        <option value="$PROJECT_DIR$/src/com/mvisualizer/Visualizer.kt" />
         <option value="$PROJECT_DIR$/src/com/mvisualizer/MConstants.kt" />
+        <option value="$PROJECT_DIR$/src/com/mvisualizer/Controls.kt" />
+        <option value="$PROJECT_DIR$/src/com/mvisualizer/Visualizer.kt" />
+        <option value="$PROJECT_DIR$/src/com/mvisualizer/MusicList.kt" />
       </list>
     </option>
   </component>
@@ -199,9 +199,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,6 +222,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -449,10 +449,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.3573701" />
-      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32979852" />
       <window_info anchor="right" id="Kotlin Bytecode" order="4" weight="0.2171875" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="Coverage" order="4" side_tool="true" visible="true" weight="5.3908356E-4" />
       <window_info id="Learn" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -619,9 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#679#680#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -657,21 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mvisualizer/Controls.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="136" column="41" lean-forward="true" selection-start-line="136" selection-start-column="41" selection-end-line="136" selection-end-column="41" />
-          <folding>
-            <element signature="e#25#164#0" expanded="true" />
-            <element signature="e#1638#2224#0" />
-            <element signature="n#!!doc;n#createSlider#0;n#!!block;n#Controls#0" />
-            <element signature="n#!!block;n#createSlider#0;n#!!block;n#Controls#0" />
-            <element signature="n#!!doc;n#createButton#0;n#!!block;n#Controls#0" />
-            <element signature="n#!!block;n#createButton#0;n#!!block;n#Controls#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mvisualizer/ISoundCloud.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -693,31 +675,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mvisualizer/MusicList.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="118" column="39" selection-start-line="118" selection-start-column="39" selection-end-line="118" selection-end-column="39" />
-          <folding>
-            <element signature="e#354#434#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mvisualizer/MConstants.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
+        <state relative-caret-position="648">
           <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mvisualizer/Visualizer.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+        <state relative-caret-position="323">
+          <caret line="537" column="25" selection-start-line="537" selection-start-column="25" selection-end-line="537" selection-end-column="25" />
           <folding>
             <element signature="n#!!block;n#stop#0;n#!!block;n#Visualizer#0" />
             <element signature="n#!!block;n#circularPulse#0;n#!!block;n#Visualizer#0" />
-            <element signature="e#3610#4199#0" />
             <element signature="n#!!block;n#signal#0;n#!!block;n#Visualizer#0" />
             <element signature="n#!!block;n#inverse#0;n#!!block;n#Visualizer#0" />
             <element signature="n#!!block;n#functionMusic#0;n#!!block;n#Visualizer#0" />
@@ -726,9 +697,35 @@
             <element signature="n#!!block;n#showSongTime#0;n#!!block;n#Visualizer#0" />
             <element signature="n#!!block;n#mouseReleased#0;n#!!block;n#Visualizer#0" />
             <element signature="n#!!block;n#showBackGround#0;n#!!block;n#Visualizer#0" />
-            <element signature="e#16948#17729#0" />
+            <element signature="n#!!block;n#togglePlay#0;n#!!block;n#Companion#0;n#!!block;n#Visualizer#0" />
+            <element signature="n#!!block;n#toggleMute#0;n#!!block;n#Companion#0;n#!!block;n#Visualizer#0" />
             <element signature="n#!!block;n#fileFilterStr#0;n#!!block;n#Companion#0;n#!!block;n#Visualizer#0" />
             <element signature="n#!!block;n#isSongCorrectFormat#0;n#!!block;n#Companion#0;n#!!block;n#Visualizer#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mvisualizer/Controls.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2396">
+          <caret line="115" column="40" selection-start-line="115" selection-start-column="40" selection-end-line="115" selection-end-column="40" />
+          <folding>
+            <element signature="e#25#164#0" expanded="true" />
+            <element signature="e#1638#2224#0" />
+            <element signature="n#!!doc;n#createSlider#0;n#!!block;n#Controls#0" />
+            <element signature="n#!!block;n#createSlider#0;n#!!block;n#Controls#0" />
+            <element signature="n#!!doc;n#createButton#0;n#!!block;n#Controls#0" />
+            <element signature="n#!!block;n#createButton#0;n#!!block;n#Controls#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mvisualizer/MusicList.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="48" column="76" lean-forward="true" selection-start-line="48" selection-start-column="76" selection-end-line="48" selection-end-column="76" />
+          <folding>
+            <element signature="e#354#434#0" />
           </folding>
         </state>
       </provider>
@@ -739,7 +736,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>MVisualizer3:jar</last-edited>
+          <last-edited>MVisualizer:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -752,7 +749,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
