@@ -5,6 +5,11 @@ If you're just stopping by please check out the application which is in the MVis
 
 ---
 
+## Announcement: ***Version 2*** of this project will soon be up soon :D, keep a look out for ```Music-VisualizerV2```!
+### Music-VisualizerV2 fixes issues from V1 with handling SoundCloud Tracks as well as bugs with the SongQueue sometimes skipping songs.
+
+---
+
 ## Libraries and API's Used
 - [Processing 3](https://processing.org/) - for the incredible graphics library!
 - [Minin 2.2.2](http://code.compartmental.net/tools/minim/) - as the audio library and audio player!
