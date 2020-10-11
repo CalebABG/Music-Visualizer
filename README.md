@@ -5,14 +5,15 @@ If you're just stopping by please check out the application which is in the MVis
 
 ---
 
-## Announcement: ***Version 2*** of this project will soon be up soon :D, keep a look out for ```Music-VisualizerV2```!
-### Music-VisualizerV2 fixes issues from V1 with handling SoundCloud Tracks as well as bugs with the SongQueue sometimes skipping songs.
+## Announcement: ```Music-VisualizerV2``` is finally out! Go check it out [Music Visualizer V2](https://github.com/CalebABG/Music-VisualizerV2)
+
+### This project, ```V1```, will be deprecated and archived on ```Sunday, November 1, 2020```. Thank you to everyone who looked at and experimented with this project!! 
 
 ---
 
 ## Libraries and API's Used
 - [Processing 3](https://processing.org/) - for the incredible graphics library!
-- [Minin 2.2.2](http://code.compartmental.net/tools/minim/) - as the audio library and audio player!
+- [Minim 2.2.2](http://code.compartmental.net/tools/minim/) - as the audio library and audio player!
 - [ControlP5](http://www.sojamo.de/libraries/controlP5/) - for the awesome gui controls!
 - [Apache Commons IO](https://commons.apache.org/proper/commons-io/) - for file utilities (Grabbing the extension :D)
 - [SoundCloud Java Library](https://github.com/nok/soundcloud-java-library) - for SoundCloud integration!
